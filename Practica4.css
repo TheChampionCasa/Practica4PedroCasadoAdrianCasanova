@@ -10,18 +10,18 @@ html,body{
   }
   .box{
     position: relative;
-    width:900px;
+    width: 58em;
     height:650px;
     background-color:rgb(196, 189, 189);
   }
   
   .container{
     
-    width:100%;
+    width:400%;
     height:100%;
     background-color:rgb(196, 189, 189);
     
-    display:flex;
+    display: flex;
     justify-content:center;
     align-items:center;
     
@@ -44,10 +44,28 @@ html,body{
   }
 
   .container2{
-    width:29em;
+    width:100em;
     height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #boton{
+    width: 40%;
+    height: 3em;
+    border: none;
+    border-radius: 0.7em;
+    border-color: aqua;
+    background: linear-gradient(45deg, #2196f3, #ff4685);
+    color: white;
+  }
+
+  #boton:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
   }
