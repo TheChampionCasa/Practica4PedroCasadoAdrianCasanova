@@ -7,7 +7,7 @@ const casillas = 9;
  puchero.width = 120;
  puchero.height = 120;
  container.appendChild(puchero);
- pintarPuchero(puchero,7,0);
+ pintarPuchero(puchero,7);
 //<!-- Crear elementos canvas para las casillas -->
 //<!-- Usar un bucle for para crear los elementos de manera automática -->
 
@@ -119,7 +119,7 @@ function pintarPuchero(canvas,fichas,num){
 //pintarCasilla(canvases[8], 11, 5); // pinta 5 fichas en el 11
 //pintarCasilla(canvases[6], 9, 3); // pinta 3 fichas en el 9
 var arrayJugadores=[];
-var fichasJ1, fichasJ2, fichasJ3, fichasJ4, fichasJ5, fichasJ6;
+
 function jugadores(){
     var jugadores, parrafo;
     jugadores=parseInt(prompt("¿Cuantos jugadores sois?"));
@@ -128,53 +128,53 @@ function jugadores(){
             //var Jugador_1 =new Jugadores(30);
             //var jugador_2 = new Jugadores(30);
             arrayJugadores=["Jugador 1","Jugador 2"];
-             fichasJ1=30, fichasJ2=30;
+            var fichasJ1=30, fichasJ2=30;
             parrafo=document.getElementById("jugadores").innerHTML=arrayJugadores[0];
-            parrafo=document.getElementById("fichasJ1").innerHTML=fichasJ1;
+            parrafo=document.getElementById("fichasJ1").innerHTML="Fichas que tiene el jugador 1: "+fichasJ1;
             parrafo=document.getElementById("jugadores2").innerHTML=arrayJugadores[1];
-            parrafo=document.getElementById("fichasJ2").innerHTML=fichasJ2;
+            parrafo=document.getElementById("fichasJ2").innerHTML="Fichas que tiene el jugador 2: "+fichasJ2;
             break;
         case 3:
             arrayJugadores=["Jugador 1","Jugador 2","Jugador 3"];
-             fichasJ1=20, fichasJ2=20, fichasJ3=20;
+            var fichasJ1=20, fichasJ2=20, fichasJ3=20;
             parrafo=document.getElementById("jugadores").innerHTML=arrayJugadores[0];
             parrafo=document.getElementById("jugadores2").innerHTML=arrayJugadores[1];
             parrafo=document.getElementById("jugadores3").innerHTML=arrayJugadores[2];
-            parrafo=document.getElementById("fichasJ1").innerHTML=fichasJ1;
-            parrafo=document.getElementById("fichasJ2").innerHTML=fichasJ2;
-            parrafo=document.getElementById("fichasJ3").innerHTML=fichasJ3;
+            parrafo=document.getElementById("fichasJ1").innerHTML="Fichas que tiene el jugador 1: "+fichasJ1;
+            parrafo=document.getElementById("fichasJ2").innerHTML="Fichas que tiene el jugador 2: "+fichasJ2;
+            parrafo=document.getElementById("fichasJ3").innerHTML="Fichas que tiene el jugador 3: "+fichasJ3;
         
             break;
         case 4:
-             fichasJ1=15, fichasJ2=15, fichasJ3=15, fichasJ4=15;
+            var fichasJ1=15, fichasJ2=15, fichasJ3=15, fichasJ4=15;
             arrayJugadores=["Jugador 1","Jugador 2","Jugador 3","Jugador 4"];
             parrafo=document.getElementById("jugadores").innerHTML=arrayJugadores[0];
             parrafo=document.getElementById("jugadores2").innerHTML=arrayJugadores[1];
             parrafo=document.getElementById("jugadores3").innerHTML=arrayJugadores[2];
             parrafo=document.getElementById("jugadores4").innerHTML=arrayJugadores[3];
-            parrafo=document.getElementById("fichasJ1").innerHTML=fichasJ1;
-            parrafo=document.getElementById("fichasJ2").innerHTML=fichasJ2;
-            parrafo=document.getElementById("fichasJ3").innerHTML=fichasJ3;
-            parrafo=document.getElementById("fichasJ4").innerHTML=fichasJ4;
+            parrafo=document.getElementById("fichasJ1").innerHTML="Fichas que tiene el jugador 1: "+fichasJ1;
+            parrafo=document.getElementById("fichasJ2").innerHTML="Fichas que tiene el jugador 2: "+fichasJ2;
+            parrafo=document.getElementById("fichasJ3").innerHTML="Fichas que tiene el jugador 3: "+fichasJ3;
+            parrafo=document.getElementById("fichasJ4").innerHTML="Fichas que tiene el jugador 4: "+fichasJ4;
         
             break;
         case 5:
-             fichasJ1=12, fichasJ2=12, fichasJ3=12, fichasJ4=12, fichasJ5=12;
+            var fichasJ1=12, fichasJ2=12, fichasJ3=12, fichasJ4=12, fichasJ5=12;
             arrayJugadores=["Jugador 1","Jugador 2","Jugador 3","Jugador 4","Jugador 5"];
             parrafo=document.getElementById("jugadores").innerHTML=arrayJugadores[0];
             parrafo=document.getElementById("jugadores2").innerHTML=arrayJugadores[1];
             parrafo=document.getElementById("jugadores3").innerHTML=arrayJugadores[2];
             parrafo=document.getElementById("jugadores4").innerHTML=arrayJugadores[3];
             parrafo=document.getElementById("jugadores5").innerHTML=arrayJugadores[4];
-            parrafo=document.getElementById("fichasJ1").innerHTML=fichasJ1;
-            parrafo=document.getElementById("fichasJ2").innerHTML=fichasJ2;
-            parrafo=document.getElementById("fichasJ3").innerHTML=fichasJ3;
-            parrafo=document.getElementById("fichasJ4").innerHTML=fichasJ4;
-            parrafo=document.getElementById("fichasJ5").innerHTML=fichasJ5;
+            parrafo=document.getElementById("fichasJ1").innerHTML="Fichas que tiene el jugador 1: "+fichasJ1;
+            parrafo=document.getElementById("fichasJ2").innerHTML="Fichas que tiene el jugador 2: "+fichasJ2;
+            parrafo=document.getElementById("fichasJ3").innerHTML="Fichas que tiene el jugador 3: "+fichasJ3;
+            parrafo=document.getElementById("fichasJ4").innerHTML="Fichas que tiene el jugador 4: "+fichasJ4;
+            parrafo=document.getElementById("fichasJ5").innerHTML="Fichas que tiene el jugador 5: "+fichasJ5;
         
             break;
         case 6:
-             fichasJ1=10, fichasJ2=10, fichasJ3=10, fichasJ4=10, fichasJ5=10, fichasJ6=10;
+            var fichasJ1=10, fichasJ2=10, fichasJ3=10, fichasJ4=10, fichasJ5=10, fichasJ6=10;
             arrayJugadores=["Jugador 1","Jugador 2","Jugador 3","Jugador 4","Jugador 5","Jugador 6"];
             parrafo=document.getElementById("jugadores").innerHTML=arrayJugadores[0];
             parrafo=document.getElementById("jugadores2").innerHTML=arrayJugadores[1];
@@ -182,12 +182,12 @@ function jugadores(){
             parrafo=document.getElementById("jugadores4").innerHTML=arrayJugadores[3];
             parrafo=document.getElementById("jugadores5").innerHTML=arrayJugadores[4];
             parrafo=document.getElementById("jugadores6").innerHTML=arrayJugadores[5];
-            parrafo=document.getElementById("fichasJ1").innerHTML=fichasJ1;
-            parrafo=document.getElementById("fichasJ2").innerHTML=fichasJ2;
-            parrafo=document.getElementById("fichasJ3").innerHTML=fichasJ3;
-            parrafo=document.getElementById("fichasJ4").innerHTML=fichasJ4;
-            parrafo=document.getElementById("fichasJ5").innerHTML=fichasJ5;
-            parrafo=document.getElementById("fichasJ6").innerHTML=fichasJ6;
+            parrafo=document.getElementById("fichasJ1").innerHTML="Fichas que tiene el jugador 1: "+fichasJ1;
+            parrafo=document.getElementById("fichasJ2").innerHTML="Fichas que tiene el jugador 2: "+fichasJ2;
+            parrafo=document.getElementById("fichasJ3").innerHTML="Fichas que tiene el jugador 3: "+fichasJ3;
+            parrafo=document.getElementById("fichasJ4").innerHTML="Fichas que tiene el jugador 4: "+fichasJ4;
+            parrafo=document.getElementById("fichasJ5").innerHTML="Fichas que tiene el jugador 5: "+fichasJ5;
+            parrafo=document.getElementById("fichasJ6").innerHTML="Fichas que tiene el jugador 6: "+fichasJ6;
         
             break;                                        
     } 
@@ -227,7 +227,7 @@ function Tirada(){
                 }
             }
            if(casilla2.length==3){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+(turno));
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-2],suma,0);
                 i=0;
                 casilla2.length=0;
@@ -248,7 +248,7 @@ function Tirada(){
                 }
             }
            if(casilla3.length==4){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-2],suma,0);
                 j=0;
                 casilla3.length=0;
@@ -269,7 +269,7 @@ function Tirada(){
                 }
             }
            if(casilla4.length==5){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-2],suma,0);
                 l=0;
                 casilla4.length=0;
@@ -290,7 +290,7 @@ function Tirada(){
                 }
             }
            if(casilla5.length==6){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-2],suma,0);
                 x=0;
                 casilla5.length=0;
@@ -311,7 +311,7 @@ function Tirada(){
                 }
             }
            if(casilla6.length==7){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-2],suma,0);
                 z=0;
                 casilla6.length=0;
@@ -349,7 +349,7 @@ function Tirada(){
                 }
             }
            if(casilla8.length==9){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-3],suma,0);
                 c=0;
                 casilla8.length=0;
@@ -371,7 +371,7 @@ function Tirada(){
                 }
             }
            if(casilla9.length==10){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-3],suma,0);
                 a=0;
                 casilla9.length=0;
@@ -393,7 +393,7 @@ function Tirada(){
                 }
             }
            if(casilla10.length==11){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-3],suma,0);
                 f=0;
                 casilla10.length=0;
@@ -415,7 +415,7 @@ function Tirada(){
                 }
             }
            if(casilla11.length==11){
-                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador"+turno);
+                alert("casilla "+suma+" llena se borraran las fichas y se entregaran al jugador "+turno);
                 pintarCasilla(canvases[suma-3],suma,0);
                 q=0;
                 casilla11.length=0;
@@ -425,6 +425,7 @@ function Tirada(){
         case 12:
             alert("Se borraran las fichas del puchero y se entregaran todas las fichas al jugador"+turno);
             var fichasaentregar=casilla7.length+casilla2.length+casilla3.length+casilla4.length+casilla5.length+casilla6.length+casilla8.length+casilla9.length+casilla10.length+casilla11.length;
+            alert(fichasaentregar);
             pintarPuchero(puchero,7,0);
             casilla7.length=0;
             pintarCasilla(canvases[0],2,0);
