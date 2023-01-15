@@ -424,8 +424,28 @@ function Tirada(){
 
         case 12:
             alert("Se borraran las fichas del puchero y se entregaran todas las fichas al jugador"+turno);
+            var fichasaentregar=casilla7.length+casilla2.length+casilla3.length+casilla4.length+casilla5.length+casilla6.length+casilla8.length+casilla9.length+casilla10.length+casilla11.length;
+            alert(fichasaentregar);
             pintarPuchero(puchero,7,0);
             casilla7.length=0;
+            pintarCasilla(canvases[0],2,0);
+            pintarCasilla(canvases[1],3,0);
+            pintarCasilla(canvases[2],4,0);
+            pintarCasilla(canvases[3],5,0);
+            pintarCasilla(canvases[4],6,0);
+            pintarCasilla(canvases[5],8,0);
+            pintarCasilla(canvases[6],9,0);
+            pintarCasilla(canvases[7],10,0);
+            pintarCasilla(canvases[8],11,0);
+            casilla2.length=0;
+            casilla3.length=0;
+            casilla4.length=0;
+            casilla5.length=0;
+            casilla6.length=0;
+            casilla8.length=0;
+            casilla9.length=0;
+            casilla10.length=0;
+            casilla11.length=0;
             mostrarMovimientos=document.getElementById("movimientos").innerHTML="Movimientos totales de la partida: "+movimientos++; 
                 if(turno==arrayJugadores.length){
                     turno=1;
